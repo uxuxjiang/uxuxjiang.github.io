@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://www.looklook.fun">
-  <title>Tag: linux | Cat的博客</title>
+  <title>hexo 添加站点访问&amp;文章访问 | Cat的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Cat的博客">
-<meta property="og:url" content="http://www.looklook.fun/tags/linux/index.html">
+  <meta name="description" content="市面上有很多统计访问的插件.这里主要用的是不蒜子的插件“不蒜子”与百度统计谷歌分析等有区别：  “不蒜子”可直接将访问次数显示在您在网页上（也可不显示）； 对于已经上线一段时间的网站，“不蒜子”允许您初始化首次数据。   安装脚本  12&amp;lt;script async src=&amp;quot;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.min">
+<meta name="keywords" content="hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo 添加站点访问&amp;文章访问">
+<meta property="og:url" content="http://www.looklook.fun/2018/09/28/hexo-添加站点访问-文章访问/index.html">
 <meta property="og:site_name" content="Cat的博客">
+<meta property="og:description" content="市面上有很多统计访问的插件.这里主要用的是不蒜子的插件“不蒜子”与百度统计谷歌分析等有区别：  “不蒜子”可直接将访问次数显示在您在网页上（也可不显示）； 对于已经上线一段时间的网站，“不蒜子”允许您初始化首次数据。   安装脚本  12&amp;lt;script async src=&amp;quot;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.min">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-09-28T10:57:05.887Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Cat的博客">
+<meta name="twitter:title" content="hexo 添加站点访问&amp;文章访问">
+<meta name="twitter:description" content="市面上有很多统计访问的插件.这里主要用的是不蒜子的插件“不蒜子”与百度统计谷歌分析等有区别：  “不蒜子”可直接将访问次数显示在您在网页上（也可不显示）； 对于已经上线一段时间的网站，“不蒜子”允许您初始化首次数据。   安装脚本  12&amp;lt;script async src=&amp;quot;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.min">
   
     <link rel="alternative" href="/atom.xml" title="Cat的博客" type="application/atom+xml">
   
@@ -165,136 +170,227 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-hexo-添加站点访问-文章访问" class="article article-type-post "
+  itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+    <header class="article-header">
+      
+  
+    <h1 class="article-title" itemprop="name">
+      hexo 添加站点访问&amp;文章访问
+    </h1>
+  
+
+      
+      <a href="/2018/09/28/hexo-添加站点访问-文章访问/" class="archive-article-date">
+  	<time datetime="2018-09-28T10:11:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-28</time>
+</a>
+      
+    </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+      <hr>
+<h5 id="市面上有很多统计访问的插件-这里主要用的是不蒜子的插件"><a href="#市面上有很多统计访问的插件-这里主要用的是不蒜子的插件" class="headerlink" title="市面上有很多统计访问的插件.这里主要用的是不蒜子的插件"></a>市面上有很多统计访问的插件.这里主要用的是不蒜子的插件</h5><p>“不蒜子”与百度统计谷歌分析等有区别：</p>
+<ul>
+<li>“不蒜子”可直接将访问次数显示在您在网页上（也可不显示）；</li>
+<li>对于已经上线一段时间的网站，“不蒜子”允许您初始化首次数据。</li>
+</ul>
+<blockquote>
+<p>安装脚本</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;script async src=&quot;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<a id="more"></a>
+<p>打开<strong>themes/你的主题/layout/_partial/footer.ejs</strong>添加上述脚本即可，当然你也可以添加到 header 中</p>
+</blockquote>
+<p><em>不蒜子的计数统计有2种</em></p>
+<blockquote>
+<p>算法a：pv的方式，单个用户连续点击n篇文章，记录n次访问量。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;span id=&quot;busuanzi_container_site_pv&quot;&gt;</span><br><span class="line">    本站总访问量&lt;span id=&quot;busuanzi_value_site_pv&quot;&gt;&lt;/span&gt;次</span><br><span class="line">&lt;/span&gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>算法b：uv的方式，单个用户连续点击n篇文章，只记录1次访客数。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;span id=&quot;busuanzi_container_site_uv&quot;&gt;</span><br><span class="line">  本站访客数&lt;span id=&quot;busuanzi_value_site_uv&quot;&gt;&lt;/span&gt;人次</span><br><span class="line">&lt;/span&gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>打开<strong>themes/你的主题/layout/_partial/footer.ejs</strong>添加即可。</p>
+</blockquote>
+<p>如有疑问或者不明,请访问<a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank" rel="noopener">不蒜子</a></p>
+
+      
+
+
+<div class="declare" hidden="hidden"></div>
+
+
+      
+      <div class="page-reward">
+        <a href="javascript:;" class="page-reward-btn tooltip-top">
+          <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>
+                    谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+        </a>
+      </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/09/08/Mac终端添加ll等命令/" class="archive-article-date">
-  	<time datetime="2018-09-08T10:51:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-08</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/09/08/Mac终端添加ll等命令/">Mac终端添加ll等命令</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+      
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://www.looklook.fun/2018/09/28/hexo-添加站点访问-文章访问/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+
+<nav id="article-nav">
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/22/oh my zsh /" class="archive-article-date">
-  	<time datetime="2018-08-22T07:07:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-22</time>
-</a>
+  
+    <a href="/2018/09/08/Mac终端添加ll等命令/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Mac终端添加ll等命令</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/22/oh my zsh /">解决oh my zsh的安装命令未被发现</a>
-    </h1>
-  
+        
+        
+    </div>
+</aside>
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/06/25/解决git-出现xcrun-error-invalid-active-developer-path问题/" class="archive-article-date">
-  	<time datetime="2018-06-25T08:42:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-25</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/06/25/解决git-出现xcrun-error-invalid-active-developer-path问题/">解决git 出现xcrun: error: invalid active developer path问题</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
+<!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zOTk5My8xNjUyMA==">
+    <script type="text/javascript">
+        (function (d, s) {
+            var j, e = d.getElementsByTagName(s)[0];
 
-          
+            if (typeof LivereTower === 'function') { return; }
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+            j = d.createElement(s);
+            j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+            j.async = true;
 
-    
+            e.parentNode.insertBefore(j, e);
+        })(document, 'script');
+    </script>
+    <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
+
+
+
+
+
+
+
+
 
 
           </div>
@@ -324,9 +420,9 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,

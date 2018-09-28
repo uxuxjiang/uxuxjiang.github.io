@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Cat的博客">
 <meta property="og:description" content="可以通过使用scrollTop来实现,可以复制以下代码观看效果">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-09-28T07:13:09.948Z">
+<meta property="og:updated_time" content="2018-09-28T10:04:17.467Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="聊天框 让滚动条保持到最底端的一种方式 scrollTop!">
 <meta name="twitter:description" content="可以通过使用scrollTop来实现,可以复制以下代码观看效果">
@@ -89,8 +89,6 @@ var _hmt = _hmt || [];
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/about/">关于我</a></li>
-	        
 			</ul>
 		</nav>
 		<nav class="header-smart-menu">
@@ -141,8 +139,6 @@ var _hmt = _hmt || [];
 			
 				
 			
-				
-			
 			
 			
 			<nav class="header-nav">
@@ -159,9 +155,7 @@ var _hmt = _hmt || [];
 				<ul style="width: 50%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
-		        
-					<li style="width: 50%"><a href="/about/">关于我</a></li>
+					<li style="width: 100%"><a href="/">主页</a></li>
 		        
 				</ul>
 			</nav>
@@ -198,7 +192,8 @@ var _hmt = _hmt || [];
     <div class="article-entry" itemprop="articleBody">
       
       <hr>
-<p>可以通过使用scrollTop来实现,可以复制以下代码观看效果<br><a id="more"></a></p>
+<p>可以通过使用scrollTop来实现,可以复制以下代码观看效果</p>
+<a id="more"></a>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=<span class="string">"en"</span>&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;meta name=<span class="string">"viewport"</span> content=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span><br><span class="line">    &lt;meta http-equiv=<span class="string">"X-UA-Compatible"</span> content=<span class="string">"ie=edge"</span>&gt;</span><br><span class="line">    &lt;title&gt;对话框&lt;/title&gt;</span><br><span class="line">    &lt;style <span class="built_in">type</span>=<span class="string">"text/css"</span>&gt;</span><br><span class="line">        .talk_show &#123;</span><br><span class="line">            width: 400px;</span><br><span class="line">            height: 100px;</span><br><span class="line">            border: 1px solid <span class="comment">#666;</span></span><br><span class="line">            overflow: auto;</span><br><span class="line">        &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">    &lt;!-- -------------实现代码的开始------------- --&gt;</span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt; </span><br><span class="line">    <span class="keyword">function</span> <span class="function"><span class="title">fun</span></span>() &#123;</span><br><span class="line">        var now = new Date();</span><br><span class="line">        var oTalk_sub = document.getElementById(<span class="string">'talksub'</span>);  </span><br><span class="line">        var oWords = document.getElementById(<span class="string">'words'</span>);</span><br><span class="line">        var sTalk = <span class="string">'&lt;div&gt;插入一条信息使滚动条向上翻卷!!! '</span></span><br><span class="line">                    + now.getTime()+<span class="string">'&lt;/div&gt;'</span></span><br><span class="line">        oWords.innerHTML = oWords.innerHTML + sTalk</span><br><span class="line">        oWords.scrollTop = oWords.scrollHeight;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">        &lt;h3&gt;----将滚动条保持到最底端---&lt;/h3&gt;</span><br><span class="line">        &lt;div class=<span class="string">"talk_show"</span> id=<span class="string">"words"</span>&gt;&lt;/div&gt;</span><br><span class="line">        &lt;div&gt;</span><br><span class="line">        &lt;input <span class="built_in">type</span>=<span class="string">"button"</span> value=<span class="string">"发 送"</span> onclick=<span class="string">"fun()"</span> id=<span class="string">"talksub"</span> style=<span class="string">"margin-top:20px "</span>&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">         &lt;!-- -------------实现代码的结束------------ --&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line"> </span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
       
 
@@ -480,6 +475,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
